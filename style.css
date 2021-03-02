@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-bg-color: #fff;
+  --canvas-bg-color: #bedcfa;
+  --walrus-body-color: #b088f9;
+  --walrus-face-color: #FFB6C1;
+  --walrus-eyelid-color: #FFB6C1;
+  --walrus-eye-color: #000;
+  --walrus-eye-glint-color: #fff;
+  --walrus-nose-color: #000;
+  --walrus-snout-color: #800080;
+  --walrus-tusk-color: #fff;
+  --hat-color: #000;
+  --water-color: #7579e7;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+.canvas {
+  position: absolute;
+  width: 820px;
+  height: 620px;
+  margin: 100px 140px;
+  background-color:var(--canvas-bg-color);
+}
+
+/*** BODY ***/
+.walrus-body-base {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+  height: 399px;
+  top: 157px;
+  border-radius: 120px 120px 15px 40px;
+  transform: rotate(-10deg);
+  background-color: var(--walrus-body-color);
+}
+
+.walrus-body-left {
+  position: relative;
+  width: 180px;
+  height: 410px;
+  top: -259px;
+  left: 220px;
+  border-radius: 340px 50px 2px 30px;
+  transform: rotate(17deg);
+  background-color: var(--walrus-body-color);
+}
+
+/*** FACE ***/
+.face {
+  position: absolute;
+  width: 100px;
+  height: 95px;
+  top: 35%;
+  left: 45%;
+  border-radius: 59px 59px 5px 5px;
+  background-color: var(--walrus-face-color);
+}
+
+/*** EYES ***/
+.eyelid-left {
+  position: relative;
+  width: 32px;
+  height: 40px;
+  top: -3px;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  background-color: var(--walrus-eyelid-color);
+}
+
+.eye-left {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  top: 6px;
+  left: 13%;
+  border-radius: 40px 35px;
+  transform: rotate(20deg);
+  background-color: var(--walrus-eye-color);
+}
+
+.eye-glint-left {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  top: 4px;
+  left: 6px;
+  border-radius: 40px 35px;
+  transform: rotate(20deg);
+  background-color: var(--walrus-eye-glint-color);
+}
+
+.eyelid-right {
+  position: relative;
+  width: 32px;
+  height: 40px;
+  border-radius: 50%;
+  top: -41px;
+  left: 75px;
+  transform: rotate(25deg);
+  background-color: var(--walrus-eyelid-color);
+}
+
+.eye-right {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  top: 6px;
+  left: 5px;
+  border-radius: 40px 35px;
+  transform: rotate(20deg);
+  background-color: var(--walrus-eye-color);
+}
+
+.eye-glint-right {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  top: 9px;
+  left: 6%;
+  border-radius: 40px 35px;
+  transform: rotate(20deg);
+  background-color: var(--walrus-eye-glint-color);
+}
+
+/*** NOSE ***/
+.nose {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 100px 100px 30px 30px;
+  top: -52px;
+  left: 25px;
+  background-color: var(--walrus-nose-color);
+}
+/*** SNOUT ***/
+.snout-left {
+  position: relative;
+  width: 47px;
+  height: 80px;
+  top: -66px;
+  left: -4px;
+  border-radius: 52px 10px 19px 90px;
+  transform:rotate(48deg);
+  background-color: var(--walrus-snout-color);
+}
+
+.snout-right {
+  position: relative;
+  width: 47px;
+  height: 80px;
+  top: -147px;
+  left: 56px;
+  border-radius: 10px 52px 90px 19px;
+  transform:rotate(-48deg);
+  background-color: var(--walrus-snout-color);
+  }
+
+/*** TUSKS ***/
+.tusk-left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 85px;
+  left: 15px;
+  border-top: 120px solid var(--walrus-tusk-color);
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-radius: 60px;
+} 
+
+.tusk-right{
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 85px;
+  left: 68px;
+  border-top: 120px solid var(--walrus-tusk-color);
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-radius: 60px;
+} 
+
+/*** HAT ***/
+.hat-body {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -337px;
+  left: -17px;
+  border-radius: 20px 20px 0 0;
+  transform: rotate(-15deg);
+  background-color: var(--hat-color);
+}
+
+.hat-brim {
+  position: relative;
+  width: 65px;
+  height: 10px;
+  top: -340px;
+  left: -21px;
+  transform: rotate(-15deg);
+  border-radius: 5px 5px 0 0;
+  background-color: var(--hat-color);
+}
+
+/*** WATER ***/
+.water-1 {
+  position: relative;
+  width: 110px;
+  height: 100px;
+  top: -36px;
+  left: -205px;
+  border-radius: 0 60px 60px 0;
+  transform: skew(73deg);
+  background-color: var(--water-color);
+}
+
+.water-2 {
+  position: relative;
+  width: 203px;
+  height: 70px;
+  top: -125px;
+  left: 130px;
+  border-radius: 60px 60px 0 0;
+  transform: skew(-78deg);
+  background-color: var(--water-color);
+}
+
+.water-3 {
+  position: relative;
+  width: 150px;
+  height: 20px;
+  top: -114px;
+  left: -210px;
+  transform: skew(-83deg);
+  background-color: var(--water-color);
+}
+
+.water-4 {
+  position: relative;
+  width: 130px;
+  height: 20px;
+  top: -177px;
+  left: 260px;
+  transform: skew(80deg);
+  background-color: var(--water-color);
+}
